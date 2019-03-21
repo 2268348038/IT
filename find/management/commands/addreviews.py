@@ -45,8 +45,8 @@ class Command(BaseCommand):
 		rating10.save()
 
 		review1 = Review(
-			title = 'Disgusting',
-			text = 'Really bad game,no like it',
+			title = 'Still expensive',
+			text = 'Really bad game,the prize is still so expensive, no discount',
 			game = Discount.objects.get(id=2),
 			user = UserProfile.objects.get(user=User.objects.get(id=1)),
 			)
@@ -67,16 +67,16 @@ class Command(BaseCommand):
 		rating2.save()
 
 		review2 = Review(
-			title = 'Not bad',
-			text = 'Very fun game but only if this is the kind of game you are looking for. ',
+			title = 'Prize decrease',
+			text = 'The game prize decrease 15%, its time to get it ',
 			game = Discount.objects.get(id=3),
 			user = UserProfile.objects.get(user=User.objects.get(id=2)), 
 			)
 		review2.save()
 
 		review3 = Review(
-			title = 'OK',
-			text = 'OK game, like all the others at the game world.',
+			title = 'Huge discount',
+			text = 'Prize jump from ?24.99 original into ?12.99 now',
 			game = Discount.objects.get(id=1),
 			user = UserProfile.objects.get(user=User.objects.get(id=3)), 
 			)
@@ -91,8 +91,8 @@ class Command(BaseCommand):
 		rating7.save()
 
 		review4 = Review(
-			title = 'Not good',
-			text = "Not much to it, just an interactive manga where you walk to dialogue scenes",
+			title = 'There is a Discount',
+			text = "Prize jump from ?59.99 original into ?39.99 now",
 			game = Discount.objects.get(id=2),
 			user = UserProfile.objects.get(user=User.objects.get(id=4)), 
 			)
@@ -106,7 +106,7 @@ class Command(BaseCommand):
 		rating3.save()
 
 		review5 = Review(
-			title = 'Good',
+			title = 'Good prize now,only ?8.99',
 			text = 'Woah!First lets be real, its an anime game. Anime games dont have a well known "good" factor. Keeping that in mind this game does a lot of surprisingly good things. ',
 			game = Discount.objects.get(id=6),
 			user = UserProfile.objects.get(user=User.objects.get(id=5)), 
@@ -114,8 +114,8 @@ class Command(BaseCommand):
 		review5.save()
 
 		review6 = Review(
-			title = 'Impossible to find',
-			text = 'This is a very bad game.',
+			title = 'Nice prize now, only ?12.99',
+			text = 'I am gonna to buy it now, there is a 50% disocunt .',
 			game = Discount.objects.get(id=8),
 			user = UserProfile.objects.get(user=User.objects.get(id=1)), 
 			)
@@ -129,8 +129,8 @@ class Command(BaseCommand):
 		rating4.save()
 
 		review7 = Review(
-			title = "I think I'm dying",
-			text = 'Oh my god. What was in that game?',
+			title = "I think I'm dying, no discount",
+			text = 'there is no discount, sad, still 54.99, so expensive',
 			game = Discount.objects.get(id=4),
 			user = UserProfile.objects.get(user=User.objects.get(id=2)), 
 			)
@@ -144,13 +144,6 @@ class Command(BaseCommand):
 			)
 		rating11.save()
 
-		review8 = Review(
-			title = "Just drinkable",
-			text = 'Meh. Not much to say.',
-			game = Discount.objects.get(id=2),
-			user = UserProfile.objects.get(user=User.objects.get(id=2)), 
-			)
-		review8.save()
 
 	def handle(self, *args, **options):
 		self.populate()
