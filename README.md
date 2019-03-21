@@ -1,4 +1,4 @@
-Check us out on Python Anywhere at https://find.pythonanywhere.com/
+Check us out on Python Anywhere at http://leoric.pythonanywhere.com/
 
 The website makes use of Google Maps geolocation and it is highly recommended to run it as a secure HTTPS site, with location services enabled. 
 
@@ -11,9 +11,9 @@ To Start the Project:
 3.) On Mac ACTIVATE venv (source myvenv/bin/activate) 
  	On Windows Activate venv (myvenv/Scripts/activate)
 	
-4.) Clone github repository (git clone https://github.com/dmayers340/itech.git)
+4.) Clone github repository (git clone https://github.com/Leoric2011/IT.git)
 
-5.) CD into itech (cd itech)
+5.) CD into itech (cd IT)
 
 6.) Install Django (pip install django~=1.11.0)
 
